@@ -1,0 +1,25 @@
+{
+  "name": "vectorsync",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Real-time collaborative vector canvas — CRDT sync, R-Tree culling, 60 FPS canvas rendering",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "install:all": "npm install",
+    "dev": "concurrently -n SERVER,CLIENT -c magenta,cyan \"npm run dev -w server\" \"npm run dev -w client\"",
+    "dev:server": "npm run dev -w server",
+    "dev:client": "npm run dev -w client",
+    "build": "npm run build -w server && npm run build -w client",
+    "start:server": "npm run start -w server",
+    "preview:client": "npm run preview -w client"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
