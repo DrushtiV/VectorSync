@@ -3,23 +3,16 @@
 A Figma-style multiplayer vector canvas: draw shapes, drag them around, watch everyone else's cursor and edits appear live, and never worry about two people clobbering each other's work — conflicts resolve automatically via a CRDT, no locks required.
 
 ```text
-┌───────────────────────────────────────────────────────────────────────────┐
-│ Toolbar + Layers  │        Infinite Canvas Viewport        │  Inspector   │
-│ (left rail)       │   (pan / zoom / draw / drag / select)  │  (right)     │
-└───────────────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│  Toolbar + Layers (left rail)  │  Infinite Canvas Viewport (pan / zoom / draw / drag / select)  │  Inspector (right)  │
+└───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## Product Preview
+## Image/ Video Preview
 
-Add the product preview image to `assest/preview.png` when it is available:
-
-![VectorSync product preview](assest/preview.png)
-
-Add the demonstration video to `assest/demo.mp4` when it is available:
-
-Demo video: [Download or watch the VectorSync demonstration](assest/demo.mp4).
+<img width="720" height="765" alt="Diagram_Demo" src="https://github.com/user-attachments/assets/f7f4f4cd-0f01-475a-9f01-8c6270b8221c" />
 
 The following embed can be used on a site or documentation page that supports HTML video:
 
@@ -277,7 +270,3 @@ shapes; nothing is lost when someone disconnects.
 - **Undo/redo**: the CRDT clock already gives you a natural history — snapshot `CanvasNode` versions per id to implement per-user undo stacks.
 
 ---
-
-## 11. License
-
-Provided as-is for learning and prototyping purposes.
