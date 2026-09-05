@@ -3,9 +3,9 @@
 A Figma-style multiplayer vector canvas: draw shapes, drag them around, watch everyone else's cursor and edits appear live, and never worry about two people clobbering each other's work — conflicts resolve automatically via a CRDT, no locks required.
 
 ```text
-┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│  Toolbar + Layers (left rail)  │  Infinite Canvas Viewport (pan / zoom / draw / drag / select)  │  Inspector (right)  │
-└───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────┐
+│  Toolbar + Layers │  Infinite Canvas Viewport │  Inspector   │
+└──────────────────────────────────────────────────────────────┘
 ```
 
 ---
